@@ -26,3 +26,10 @@ function forwardEmail(event) {
         console.log("event.completed() called.");
     }
 }
+
+// **This line is critical:**
+if (typeof Office !== "undefined" && Office.actions) {
+    Office.actions.associate("forwardEmail", forwardEmail);
+} else {
+    console.error("Office.actions is not available");
+}
