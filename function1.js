@@ -1,4 +1,10 @@
-Office.onReady();
+Office.onReady(function (info) {
+    if (info.host === Office.HostType.Outlook) {
+        console.log("Office is ready in Outlook.");
+    } else {
+        console.log("Office is ready, but not in Outlook. Host:", info.host);
+    }
+});
 
 function onSpamReport(spamEvent) {
 
