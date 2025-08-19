@@ -33,7 +33,7 @@ function onSpamReport(spamEvent) {
       spamEvent.completed({
         moveItemTo: Office.MailboxEnums.MoveSpamItemTo.JunkFolder,
         showPostProcessingDialog: {
-          title: "Mawarid1 Spam Reporting",
+          title: "Yahoo Spam Reporting",
           description: "Thank you for reporting this message.",
         }
       });
