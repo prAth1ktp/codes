@@ -21,7 +21,7 @@ function action(event) {
 
   const base64Msg = asyncResult.value;
 
-  console.log(asyncResult.value);
+//  console.log(asyncResult.value);
 const dataUrl = "data:application/vnd.ms-outlook;base64," + base64Msg;
 
    Office.context.mailbox.displayNewMessageForm({
